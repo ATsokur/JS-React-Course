@@ -1,6 +1,1 @@
-"use strict";
-
-const a = 1;
-const b = {};
-
-console.log(a && b);
+const numberOfFilms = promt("Сколько фильмов уже посмотрели?", 0);
