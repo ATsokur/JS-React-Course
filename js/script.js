@@ -8,10 +8,12 @@ const personalMovieDB = {
   privat: false,
 };
 
-const oneLastWatchFilm = prompt("Один из последних просмотренных фильмов?", "");
+const a = prompt("Один из последних просмотренных фильмов?", "");
+const b = +prompt("На сколько оцените его?", "");
+const c = prompt("Один из последних просмотренных фильмов?", "");
+const d = +prompt("На сколько оцените его?", "");
 
-const markOfFilm = +prompt("На сколько оцените его?", "");
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-personalMovieDB.movies[oneLastWatchFilm] = markOfFilm;
-
-console.log(personalMovieDB);
+console.log(personalMovieDB.movies);
