@@ -1,4 +1,4 @@
-const numberOfFilms = prompt("Сколько фильмов уже посмотрели?", 0);
+const numberOfFilms = +prompt("Сколько фильмов уже посмотрели?", 0);
 
 const personalMovieDB = {
   count: numberOfFilms,
@@ -10,7 +10,7 @@ const personalMovieDB = {
 
 const oneLastWatchFilm = prompt("Один из последних просмотренных фильмов?", "");
 
-const markOfFilm = prompt("На сколько оцените его?", "");
+const markOfFilm = +prompt("На сколько оцените его?", "");
 
 personalMovieDB.movies[oneLastWatchFilm] = markOfFilm;
 
